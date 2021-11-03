@@ -33,6 +33,11 @@ url("./fonts/icofont.woff") format("woff");
   -webkit-font-smoothing: antialiased;
 }
 
+.icofont-ui-birthday-cake:before
+{
+  content: "\eb46";
+}
+
 .icofont-ui-email:before
 {
   content: "\ec56";

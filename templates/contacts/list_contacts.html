@@ -8,7 +8,15 @@
 <div class="flex flex-wrap">
   {% for contact in contacts %}
   <div class="w-33 pa3">
-    <h2>{{ contact.name }}</h2>
+    <h2>{{ contact.name }}<br />
+    </h2>
+
+    {% if contact.dob %}
+    <div class="flex">
+      <div class="pr2"><i class="icofont-birthday-cake"></i></div>
+      <div>{{ contact.dob }}</div>
+    </div>
+    {% endif %}
 
     <div class="flex">
       <div class="pr2"><i class="icofont-location-pin"></i></div>

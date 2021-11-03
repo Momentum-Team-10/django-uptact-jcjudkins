@@ -45,4 +45,4 @@ def delete_contact(request, pk):
         return redirect(to='list_contacts')
 
     return render(request, "contacts/delete_contact.html",
-                  {"contact": contact})
+                {"contact": contact})
