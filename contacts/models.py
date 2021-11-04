@@ -9,7 +9,7 @@ class Contact(models.Model):
         message="Phone number must be entered in the format: '+9999999999'.")
 
     name = models.CharField(max_length=255)
-    dob = models.DateField(null=True, blank=True)
+    dob = models.DateTimeField(null=True, blank=True)
     email = models.EmailField(null=True, blank=True)
     phone_number = models.CharField(max_length=11,
                                     validators=[phone_regex],
